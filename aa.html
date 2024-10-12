@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple E-commerce Website</title>
+    <link rel="stylesheet" href="aaa.css">
+    <script src="aaa.js"></script>
+</head>
+<html>
+
+</html>
+<body>
+    <!-- Header -->
+    <header>
+        <!-- Links removed as per request -->
+        <h3>
+           <center>
+            Net All
+           </center> 
+        </h3>
+    </header>
+    <!--<div class="aaa">
+        <h1>
+            Welcom to my web page <br>
+            <span class="d">Net</span> All.com
+        </h1>
+    </div>-->
+
+    <!-- Product Grid -->
+    <section class="products">
+        <!-- Product 1 -->
+        <div class="product-card">
+            <img src="https://via.placeholder.com/150" alt="Product Image">
+            <h3>Time.bat</h3>
+            <p>$Free</p>
+            <button onclick="addToCart('Time.bat',1)" class="download-btn" id="downloadBtn" >Buy Now</button>
+            
+    <script>
+        document.getElementById('downloadBtn').addEventListener('click', function () {
+            // Define the content of the .bat file
+            const batContent = `
+@echo off
+echo.
+set time=%time%
+echo %time%
+echo.
+timeout /t 900 >nul
+            `.trim();
+
+            // Create a Blob with the batch content
+            const blob = new Blob([batContent], { type: 'text/plain' });
+
+            // Create a link element
+            const link = document.createElement('a');
+
+            // Set the download attribute with a filename
+            link.download = 'Time.bat';
+
+            // Create a URL for the Blob and set it as the href attribute
+            link.href = window.URL.createObjectURL(blob);
+
+            // Append the link to the body
+            document.body.appendChild(link);
+
+            // Programmatically click the link to trigger the download
+            link.click();
+
+            // Remove the link from the document
+            document.body.removeChild(link);
+        });
+    </script>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product-card">
+            <img src="https://via.placeholder.com/150" alt="Product Image">
+            <h3>Date.bat</h3>
+            <p>$Free</p>
+            <button onclick="addToCart('Date.bat',1)"  class="aasim-abu" id="aasimabu">Buy Now</button>
+            <script>
+                document.getElementById('aasimabu').addEventListener('click', function () {
+                   // Define the content of the .bat file
+                   const batContent = `
+@echo off
+date /t
+timeout /t 900 >nul
+                   `.trim();
+               
+                   // Create a Blob with the batch content
+                   const blob = new Blob([batContent], { type: 'text/plain' });
+               
+                   // Create a link element
+                   const link = document.createElement('a');
+               
+                   // Set the download attribute with a filename
+                   link.download = 'Date.bat';
+               
+                   // Create a URL for the Blob and set it as the href attribute
+                   link.href = window.URL.createObjectURL(blob);
+               
+                   // Append the link to the body
+                   document.body.appendChild(link);
+               
+                   // Programmatically click the link to trigger the download
+                   link.click();
+               
+                   // Remove the link from the document
+                   document.body.removeChild(link);
+                });
+               </script>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product-card">
+            <img src="https://via.placeholder.com/150" alt="Product Image">
+            <h3>Time,date.bat</h3>
+            <p>$Free</p>
+            <button onclick="addToCart('Time,Date',1)" class="time-date" id="timedate">Buy Now</button>
+            <script>
+                document.getElementById('timedate').addEventListener('click', function () {
+                   // Define the content of the .bat file
+                   const batContent = `
+@echo off
+echo.
+set time=%time%
+echo %time%
+date /t
+echo.
+timeout /t 900 >nul
+                   `.trim();
+               
+                   // Create a Blob with the batch content
+                   const blob = new Blob([batContent], { type: 'text/plain' });
+               
+                   // Create a link element
+                   const link = document.createElement('a');
+               
+                   // Set the download attribute with a filename
+                   link.download = 'Time,Date.bat';
+               
+                   // Create a URL for the Blob and set it as the href attribute
+                   link.href = window.URL.createObjectURL(blob);
+               
+                   // Append the link to the body
+                   document.body.appendChild(link);
+               
+                   // Programmatically click the link to trigger the download
+                   link.click();
+
+                   // Remove the link from the document
+                   document.body.removeChild(link);
+                });
+               </script>
+        </div>
+
+        <!-- Additional Products -->
+        <!-- Product 4 -->
+        <div class="product-card">
+            <img src="https://via.placeholder.com/150" alt="Product Image">
+            <h3>File Make</h3>
+            <p>$Free</p>
+            <button onclick="addToCart('File make', 1)" class="file-make" id="filemake">Buy Now</button>
+            <script>
+                document.getElementById('filemake').addEventListener('click', function () {
+                   // Define the content of the .bat file
+                   const batContent = `
+@echo off
+echo.
+set /p make= foloder name:
+timeout /t 2 >nul
+md %make%
+timeout /t >nul
+
+
+                   `.trim();
+               
+                   // Create a Blob with the batch content
+                   const blob = new Blob([batContent], { type: 'text/plain' });
+               
+                   // Create a link element
+                   const link = document.createElement('a');
+               
+                   // Set the download attribute with a filename
+                   link.download = 'File make.bat';
+               
+                   // Create a URL for the Blob and set it as the href attribute
+                   link.href = window.URL.createObjectURL(blob);
+               
+                   // Append the link to the body
+                   document.body.appendChild(link);
+               
+                   // Programmatically click the link to trigger the download
+                   link.click();
+
+                   // Remove the link from the document
+                   document.body.removeChild(link);
+                });
+               </script>
+
+        </div>
+
+        <div class="product-card">
+            <img src="https://via.placeholder.com/150" alt="Product Image">
+            <h3>File Delet.bat</h3>
+            <p>$Free</p>
+            <button onclick="addToCart('File Delet.bat', 1)" class="file-delet" id="filedelet">Buy Now</button>
+            <script>
+                document.getElementById('filedelet').addEventListener('click', function () {
+                   // Define the content of the .bat file
+                   const batContent = `
+@echo off
+echo.
+dir/q
+echo.
+set /p make= foloder name:
+timeout /t 2 >nul
+rd %make%
+timeout /t 2 >nul
+                   `.trim();
+               
+                   // Create a Blob with the batch content
+                   const blob = new Blob([batContent], { type: 'text/plain' });
+               
+                   // Create a link element
+                   const link = document.createElement('a');
+               
+                   // Set the download attribute with a filename
+                   link.download = 'File Delete.bat';
+               
+                   // Create a URL for the Blob and set it as the href attribute
+                   link.href = window.URL.createObjectURL(blob);
+               
+                   // Append the link to the body
+                   document.body.appendChild(link);
+               
+                   // Programmatically click the link to trigger the download
+                   link.click();
+
+                   // Remove the link from the document
+                   document.body.removeChild(link);
+                });
+               </script>
+        </div>
+
+        <!-- Product 6 -->
+        <div class="product-card">
+            <img src="https://via.placeholder.com/150" alt="Product Image">
+            <h3>Notpad.bat</h3>
+            <p>$Free</p>
+            <button onclick="addToCart('Notpad.bat',1)" class="not-pad" id="notpad">But Now</button>
+            <script>
+                document.getElementById('notpad').addEventListener('click', function () {
+                   // Define the content of the .bat file
+                   const batContent = `
+@echo off
+title Notpad 
+:loop
+set /p a= [/]~
+goto :loop
+                   `.trim();
+               
+                   // Create a Blob with the batch content
+                   const blob = new Blob([batContent], { type: 'text/plain' });
+               
+                   // Create a link element
+                   const link = document.createElement('a');
+               
+                   // Set the download attribute with a filename
+                   link.download = 'Notpad.bat';
+               
+                   // Create a URL for the Blob and set it as the href attribute
+                   link.href = window.URL.createObjectURL(blob);
+               
+                   // Append the link to the body
+                   document.body.appendChild(link);
+               
+                   // Programmatically click the link to trigger the download
+                   link.click();
+
+                   // Remove the link from the document
+                   document.body.removeChild(link);
+                });
+               </script>
+        </div>
+        <div class="product-card">
+            <img src="https://via.placeholder.com/150" alt="Product Image">
+            <h3>Propes.bat</h3>
+            <p>$Free</p>
+            <button onclick="addToCart('Notpad.bat',1)" class="pro-pos" id="propes">But Now</button>
+            <script>
+                document.getElementById('propes').addEventListener('click', function () {
+                   // Define the content of the .bat file
+                   const batContent = `
+    @echo off
+    echo Write a  ('Hi')
+    set /p a= #~
+    
+    :loop
+    if "%a%" == "hi" (
+        color Fc
+        echo I Love You
+    ) else (
+        echo write ('hi')
+    )
+    goto :loop
+    
+                   `.trim();
+               
+                   // Create a Blob with the batch content
+                   const blob = new Blob([batContent], { type: 'text/plain' });
+               
+                   // Create a link element
+                   const link = document.createElement('a');
+               
+                   // Set the download attribute with a filename
+                   link.download = 'Propes.bat';
+               
+                   // Create a URL for the Blob and set it as the href attribute
+                   link.href = window.URL.createObjectURL(blob);
+               
+                   // Append the link to the body
+                   document.body.appendChild(link);
+               
+                   // Programmatically click the link to trigger the download
+                   link.click();
+    
+                   // Remove the link from the document
+                   document.body.removeChild(link);
+                });
+               </script>
+        </div>
+        <div class="product-card">
+            <img src="https://via.placeholder.com/150" alt="Product Image">
+            <h3>Tasklist.bat</h3>
+            <p>$Free</p>
+            <button onclick="addToCart('Tasklist.bat',1)" class="pro-es" id="proes">But Now</button>
+            <script>
+                document.getElementById('proes').addEventListener('click', function () {
+                   // Define the content of the .bat file
+                   const batContent = `
+@echo off
+tasklist
+timeout /t 900 >nul
+                   `.trim();
+               
+                   // Create a Blob with the batch content
+                   const blob = new Blob([batContent], { type: 'text/plain' });
+               
+                   // Create a link element
+                   const link = document.createElement('a');
+               
+                   // Set the download attribute with a filename
+                   link.download = 'Propes.bat';
+               
+                   // Create a URL for the Blob and set it as the href attribute
+                   link.href = window.URL.createObjectURL(blob);
+               
+                   // Append the link to the body
+                   document.body.appendChild(link);
+               
+                   // Programmatically click the link to trigger the download
+                   link.click();
+    
+                   // Remove the link from the document
+                   document.body.removeChild(link);
+                });
+               </script>
+        </div>
+
+
+
+    <div class="product-card">
+        <img src="https://via.placeholder.com/150" alt="Product Image">
+        <h3>Start.bat (viruse)</h3>
+        <p>$Free</p>
+        <button onclick="addToCart('Start(viruse).bat',1)" class="sta-re" id="start">But Now</button>
+        <script>
+            document.getElementById('start').addEventListener('click', function () {
+               // Define the content of the .bat file
+               const batContent = `
+@echo off
+:loop
+start ""
+goto :loop
+               `.trim();
+           
+               // Create a Blob with the batch content
+               const blob = new Blob([batContent], { type: 'text/plain' });
+           
+               // Create a link element
+               const link = document.createElement('a');
+           
+               // Set the download attribute with a filename
+               link.download = 'start.bat';
+           
+               // Create a URL for the Blob and set it as the href attribute
+               link.href = window.URL.createObjectURL(blob);
+           
+               // Append the link to the body
+               document.body.appendChild(link);
+           
+               // Programmatically click the link to trigger the download
+               link.click();
+
+               // Remove the link from the document
+               document.body.removeChild(link);
+            });
+           </script>
+    </div>
+<div class="product-card">
+    <img src="https://via.placeholder.com/150" alt="Product Image">
+    <h3>I Love You.bat (viruse)</h3>
+    <p>$Free</p>
+    <button onclick="addToCart('I Love You(viruse).bat',1)" class="i-love" id="ilove">But Now</button>
+    <script>
+        document.getElementById('ilove').addEventListener('click', function () {
+           // Define the content of the .bat file
+           const batContent = `
+@echo off
+:loop
+start "" "a"
+goto :loop
+           `.trim();
+       
+           // Create a Blob with the batch content
+           const blob = new Blob([batContent], { type: 'text/plain' });
+       
+           // Create a link element
+           const link = document.createElement('a');
+       
+           // Set the download attribute with a filename
+           link.download = 'I love you.bat';
+       
+           // Create a URL for the Blob and set it as the href attribute
+           link.href = window.URL.createObjectURL(blob);
+       
+           // Append the link to the body
+           document.body.appendChild(link);
+       
+           // Programmatically click the link to trigger the download
+           link.click();
+
+           // Remove the link from the document
+           document.body.removeChild(link);
+        });
+       </script>
+  </div>
+  
+    <div class="product-card">
+        <img src="https://via.placeholder.com/150" alt="Product Image">
+        <h3>Wife hack.bat (hack)</h3>
+        <p>$Free</p>
+        <button onclick="addToCart('Wife(hack).bat',1)" class="i-hack" id="hack">But Now</button>
+        <script>
+            document.getElementById('hack').addEventListener('click', function () {
+               // Define the content of the .bat file
+               const batContent = `
+@echo off
+netsh wlan show profile
+timeout /t 4 >nul
+set /p a=Enter a profile:
+netsh wlan show profile key = clear "%a%"
+timeout /t 6 > nul
+pause
+               `.trim();
+           
+               // Create a Blob with the batch content
+               const blob = new Blob([batContent], { type: 'text/plain' });
+           
+               // Create a link element
+               const link = document.createElement('a');
+           
+               // Set the download attribute with a filename
+               link.download = 'Wife (hack).bat';
+           
+               // Create a URL for the Blob and set it as the href attribute
+               link.href = window.URL.createObjectURL(blob);
+           
+               // Append the link to the body
+               document.body.appendChild(link);
+           
+               // Programmatically click the link to trigger the download
+               link.click();
+    
+               // Remove the link from the document
+               document.body.removeChild(link);
+            });
+           </script>
+    </div>
+    <div class="product-card">
+        <img src="https://via.placeholder.com/150" alt="Product Image">
+        <h3>IP ID hack.bat (hack)</h3>
+        <p>$Free</p>
+        <button onclick="addToCart('IP ID(hack).bat',1)" class="i-p" id="ip">But Now</button>
+        <script>
+            document.getElementById('ip').addEventListener('click', function () {
+               // Define the content of the .bat file
+               const batContent = `
+    @echo off
+    title %random%
+    color 0A
+    cls
+    
+    :: Start "hacking" message
+    echo Initializing hack...
+    timeout /t 2 >nul
+    echo Accessing secure system...
+    timeout /t 1 >nul
+    echo Bypassing security...
+    timeout /t 1 >nul
+    echo Decrypting password hashes...
+    timeout /t 2 >nul
+    echo password hack...
+    timeout /t 2 >nul
+    dir/s
+    dir/s
+    timeout /t 3 >nul
+    cls
+     
+    :: Start a loop of random characters
+    echo Hacking in progress...
+    timeout /t 1 >nul
+    cls
+    
+    cls
+    echo Hack successful!
+    echo Downloading files...
+    timeout /t 3 >nul
+    
+    cls
+    timeout /t 2 >nul
+    
+    :: Ending message
+    color 0C
+    echo WARNING: Unauthorized access detected!
+    echo Initiating system lockdown...
+    timeout /t 5 >nul
+    cls
+    echo System lock in progress...
+    cls
+    
+    color
+    set /paas= [/] hack a system - : 
+    timeout /t 3>nul
+    cls
+    timeout /t 3>nul
+    exit
+    
+               `.trim();
+           
+               // Create a Blob with the batch content
+               const blob = new Blob([batContent], { type: 'text/plain' });
+           
+               // Create a link element
+               const link = document.createElement('a');
+           
+               // Set the download attribute with a filename
+               link.download = 'IP ID (hack).bat';
+           
+               // Create a URL for the Blob and set it as the href attribute
+               link.href = window.URL.createObjectURL(blob);
+           
+               // Append the link to the body
+               document.body.appendChild(link);
+           
+               // Programmatically click the link to trigger the download
+               link.click();
+    
+               // Remove the link from the document
+               document.body.removeChild(link);
+            });
+        </script>
+    </div> 
+    <div class="product-card">
+        <img src="https://via.placeholder.com/150" alt="Product Image">
+        <h3>Good OS.bat</h3>
+        <p>$Free</p>
+        <button onclick="addToCart('Good OS.bat',1)" class="o-s" id="os">But Now</button>
+        <script>
+            document.getElementById('os').addEventListener('click', function () {
+               // Define the content of the .bat file
+               const batContent = `
+@echo off
+title Simple Batch OS
+cls
+echo ==================================================
+echo           Welcome to netall Batch OS              
+echo ==================================================
+echo.
+echo [/1] nopad
+echo [/2] time
+echo [/3] date
+echo [/4] qr coad
+echo [/5] propes
+
+echo.
+echo.
+title Notpad 
+:loop
+set /p a= [/]~
+cls
+
+echo ==================================================
+echo           Welcome to netall Batch OS              
+echo ==================================================
+echo.
+echo [/1] nopad
+echo [/2] time
+echo [/3] date
+echo [/4] qr coad
+echo [/5] propes
+
+echo.
+echo.
+title Current Time
+color 0a
+:time_loop
+cls
+echo ==================================================
+echo               Current Time is:
+echo.
+time /t
+echo ==================================================
+timeout /t 1 >nul
+cls
+
+echo ==================================================
+echo           Welcome to netall Batch OS              
+echo ==================================================
+echo.
+echo [/1] nopad
+echo [/2] time
+echo [/3] date
+echo [/4] file make
+echo [/5] propes
+echo.
+echo ==================================================
+echo           Current System Date                     
+echo ==================================================
+echo.
+echo The current system date is: %date%
+pause
+cls
+
+echo ==================================================
+echo           Welcome to netall Batch OS              
+echo ==================================================
+echo.
+echo [/1] nopad
+echo [/2] time
+echo [/3] date
+echo [/4] file make
+echo [/5] propes
+echo.
+echo ==================================================
+echo                   File make                     
+echo ==================================================
+echo.
+set /p a=File Make[~]
+md %a%
+pause
+cls
+
+echo ==================================================
+echo           Welcome to netall Batch OS              
+echo ==================================================
+echo.
+echo [/1] nopad
+echo [/2] time
+echo [/3] date
+echo [/4] file make
+echo [/5] propes
+echo.
+echo ==================================================
+echo                    propes                    
+echo ==================================================
+echo.
+@echo off
+echo Write a  ('Hi')
+set /p a= #~
+
+:loop
+if "%a%" == "hi" (
+    color Fc
+    echo I Love You
+) else (
+    echo write ('hi')
+)
+goto :loop
+pause
+cls
+
+    
+               `.trim();
+           
+               // Create a Blob with the batch content
+               const blob = new Blob([batContent], { type: 'text/plain' });
+           
+               // Create a link element
+               const link = document.createElement('a');
+           
+               // Set the download attribute with a filename
+               link.download = 'Good OS.bat';
+           
+               // Create a URL for the Blob and set it as the href attribute
+               link.href = window.URL.createObjectURL(blob);
+           
+               // Append the link to the body
+               document.body.appendChild(link);
+           
+               // Programmatically click the link to trigger the download
+               link.click();
+    
+               // Remove the link from the document
+               document.body.removeChild(link);
+            });
+        </script>
+    </div>
+</section>
+    <!-- Total Button -->
+    <div class="total-button">
+        <button onclick="showTotal()">View Total</button>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2023 Your E-commerce Website.Make With Aasim</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        let totalPrice = 0;
+
+        function addToCart(productName, price) {
+            totalPrice += price;
+            alert(productName + " has been added to your cart!");
+        }
+
+        function showTotal() {
+            alert("Your total parcher: $" + totalPrice.toFixed(2));
+        }
+    </script>
+</body>
+</html>
