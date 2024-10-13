@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>VIRUS OF NET</title>
+    <link rel="stylesheet" href="logian.css">
+    <style>
+        /* General Styles */
+        body.q {
+            background-color: #000;
+            color: #fff;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Navigation Styles */
+        nav {
+            background-color: #111;
+            padding: 20px;
+        }
+
+        .h1 h2 {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 0;
+            font-size: 24px;
+            color: #fff;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 10px;
+        }
+
+        .nav-links a button {
+            background-color: #444;
+            color: #fff;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .nav-links a button:hover {
+            background-color: #666;
+        }
+
+        /* Header Section Styles */
+        .s {
+            background-color: #000;
+            color: #fff;
+            margin-left: 20px;
+            padding: 100px 20px;
+        }
+
+        .s h1 {
+            font-size: 48px;
+            margin: 0;
+        }
+
+        .f {
+            color: red;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .h1 h2 {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .nav-links {
+                flex-direction: column;
+                width: 100%;
+            }
+
+            .nav-links a button {
+                width: 100%;
+                text-align: left;
+            }
+
+            .s h1 {
+                font-size: 32px;
+            }
+        }
+        .mm{
+            margin-left:15%;
+            font-size:60px;
+        }
+        .am{
+            margin-left:15%;
+            font-size:60px;
+        }
+
+    </style>
+</head>
+<body class="q">
+    <nav>
+        <div class="h1">
+            <h2>
+                VIRUS OF NET
+                <div class="nav-links">
+                    <a href="html class.html">
+                        <button class="g">His</button>
+                    </a>
+                    <a href="cssclass.html">
+                        <button>Data</button>
+                    </a>
+                    <a href="#contact">
+                        <button>Contact</button>
+                    </a>
+                </div>
+            </h2>
+        </div>
+    </nav>
+
+    <div class="s">
+        <br>
+        <br>
+        <h class="mm">
+            WELCOME <br> 
+            <div class="am">
+                <span class="f">TO</span>
+                VIRUS FO NET
+            </div>
+        </h1>
+    </div>
+</body>
+</html>
+
+
+
